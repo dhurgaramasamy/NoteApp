@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_genie/greeting_content.dart';
-import 'package:note_genie/todays_tasks_content.dart';
+import 'package:note_genie/task_section.dart';
 
 class LandingScreenContent extends StatelessWidget {
   const LandingScreenContent({super.key});
@@ -14,7 +14,8 @@ class LandingScreenContent extends StatelessWidget {
         SizedBox(height: 40, width: MediaQuery.devicePixelRatioOf(context),),
         const GreetingContent(name: 'Dhurga',),
         SizedBox(height: 24, width: MediaQuery.devicePixelRatioOf(context),),
-        const TodaysTasks(),
+        //TODO: handle no tasks from db
+        const TasksSection(),
       ],
     );
   }
