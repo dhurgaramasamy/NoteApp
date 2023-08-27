@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/landing/ui/create_task_button.dart';
 import 'package:note_genie/landing/ui/landing_screen_content.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -9,7 +8,6 @@ class LandingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: LandingScreenContent(),
-      persistentFooterButtons: [CreatTaskButton()],
     );
   }
 }

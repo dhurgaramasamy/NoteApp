@@ -6,14 +6,26 @@ class NoTasksContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SvgPicture.asset(
-          'assets/icons/no_tasks.svg',
-          semanticsLabel: 'My SVG Image',
-        ),
-        Text("No tasks created"),
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SvgPicture.asset(
+            'assets/icons/no_tasks.svg',
+            semanticsLabel: 'My SVG Image',
+          ),
+          const Text(
+            "No tasks created",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              fontFamily: 'Plus Jakarta Sans',
+              fontWeight: FontWeight.w600,
+              letterSpacing: 0.07,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
