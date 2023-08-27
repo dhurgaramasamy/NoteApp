@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/task.dart';
+import 'package:note_genie/task/model/task.dart';
 
 class TaskCard extends StatelessWidget {
   final Task task;
@@ -14,7 +14,7 @@ class TaskCard extends StatelessWidget {
           children: [
             Text(task.title),
             Text(task.description),
-            Text(task.reminderTime.toString()),
+            Text(task.time.toString()),
             Text(task.status.name)
           ],
         ));

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/landing_screen.dart';
+import 'package:note_genie/landing/ui/landing_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

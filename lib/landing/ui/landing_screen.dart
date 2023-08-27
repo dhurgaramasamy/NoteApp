@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/create_task_button.dart';
-import 'package:note_genie/landing_screen_content.dart';
+import 'package:note_genie/landing/ui/create_task_button.dart';
+import 'package:note_genie/ui/landing_screen_content.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});

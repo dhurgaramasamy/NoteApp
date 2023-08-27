@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/todays_tasks_content.dart';
+import 'package:note_genie/landing/ui/todays_tasks_content.dart';
 
 class TasksSection extends StatelessWidget {
   const TasksSection({super.key});
