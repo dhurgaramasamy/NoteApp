@@ -6,24 +6,26 @@ class GreetingContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Text(
-            "Good Morning, $name!",
-            style: const TextStyle(
-              fontFamily: "Plus Jakarta Sans",
-              fontSize: 40,
-              fontStyle: FontStyle.normal,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 0.07,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              "Good Morning, $name!",
+              style: const TextStyle(
+                fontFamily: "Plus Jakarta Sans",
+                fontSize: 40,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.w600,
+              ),
+              overflow: TextOverflow.ellipsis,
+              maxLines: 2,
             ),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 2,
           ),
-        ),
-        const Icon(Icons.calendar_month_sharp, size: 32,)
-      ],
+          const Icon(Icons.calendar_month_sharp, size: 32,)
+        ],
+      ),
     );
   }
 }
