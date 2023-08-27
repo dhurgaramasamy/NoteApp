@@ -13,7 +13,9 @@ class NoTasksContent extends StatelessWidget {
           SvgPicture.asset(
             'assets/icons/no_tasks.svg',
             semanticsLabel: 'My SVG Image',
+            height: 200,
           ),
+          const SizedBox(height: 20),
           const Text(
             "No tasks created",
             textAlign: TextAlign.center,
