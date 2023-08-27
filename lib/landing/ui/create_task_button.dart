@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_genie/task/ui/create_task/create_task_screen.dart';
 
 class CreatTaskButton extends StatelessWidget {
   const CreatTaskButton({super.key});
@@ -8,7 +9,13 @@ class CreatTaskButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 8, top: 8, right: 8, bottom: 20),
       child: ElevatedButton(
-        onPressed: null,
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CreateTaskScreen(),
+              ));
+        },
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(
             const Color(0xFFFF7360),
