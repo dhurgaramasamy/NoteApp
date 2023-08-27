@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:note_genie/landing/ui/greeting_content.dart';
 import 'package:note_genie/landing/ui/no_tasks_content.dart';
 import 'package:note_genie/landing/ui/task_section.dart';
+import 'package:note_genie/task/ui/create_task/create_task_screen.dart';
 
 class LandingScreenContent extends StatelessWidget {
   const LandingScreenContent({super.key});
@@ -26,7 +27,17 @@ class LandingScreenContent extends StatelessWidget {
           child:
               listLength != 0 ? const TasksSection() : const NoTasksContent(),
         ),
-        const CreatTaskButton(),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CreateTaskButton(onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CreateTaskScreen(),
+              ),
+            );
+          }),
+        ),
       ],
     );
   }

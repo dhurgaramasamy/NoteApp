@@ -6,9 +6,7 @@ class GreetingContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
+    return Row(
         children: [
           Expanded(
             child: Text(
@@ -25,7 +23,6 @@ class GreetingContent extends StatelessWidget {
           ),
           const Icon(Icons.calendar_month_sharp, size: 32,)
         ],
-      ),
     );
   }
 }

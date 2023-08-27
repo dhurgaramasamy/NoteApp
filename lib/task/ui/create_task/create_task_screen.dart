@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_genie/task/ui/create_task_content.dart';
+import 'package:note_genie/task/ui/create_task/create_task_content.dart';
 
 class CreateTaskScreen extends StatelessWidget {
   const CreateTaskScreen({super.key});
